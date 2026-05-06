@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG paralel test örnekleri" parallel="tests" thread-count="2">
+    <test name="Test on Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.paralaltest.tests.ParalelTest"/>
+        </classes>
+    </test>
+    <test name="Test on Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.paralaltest.tests.ParalelTest"/>
+        </classes>
+    </test>
+    <test name="Test on Edge">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="com.paralaltest.tests.ParalelTest"/>
+        </classes>
+    </test>
+</suite>
